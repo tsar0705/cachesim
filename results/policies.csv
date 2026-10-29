@@ -1,0 +1,9 @@
+workload,policy,miss_rate,evictions
+loop 9KB over 8KB cache,lru,0.06976,13824
+loop 9KB over 8KB cache,fifo,0.06976,13824
+loop 9KB over 8KB cache,plru,0.06968,13808
+loop 9KB over 8KB cache,random,0.02836,5543
+hotspot 6KB hot set,lru,0.14356,28584
+hotspot 6KB hot set,fifo,0.21912,43697
+hotspot 6KB hot set,plru,0.15757,31387
+hotspot 6KB hot set,random,0.21964,43800

@@ -1,0 +1,3 @@
+config,amat_cycles
+L1 only,15.356
+L1 + 256KB L2,8.103

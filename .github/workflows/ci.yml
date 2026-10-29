@@ -1,0 +1,17 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        cxx: [g++, clang++]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build + unit tests
+        run: make CXX=${{ matrix.cxx }} all test
+      - name: Differential test vs Python golden model
+        run: make diff
+      - name: ASan + UBSan (unit tests and differential test)
+        if: matrix.cxx == 'g++'
+        run: make asan
