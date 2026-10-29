@@ -1,4 +1,4 @@
-# cachesim: trace-driven CPU cache hierarchy simulator (C++17)
+![ci](https://github.com/tsar0705/cachesim/actions/workflows/ci.yml/badge.svg) # cachesim: trace-driven CPU cache hierarchy simulator (C++17)
 
 A configurable 1- or 2-level cache simulator that replays memory traces and reports hit/miss
 behaviour, evictions, write-backs, memory traffic and AMAT. It is verified against an
